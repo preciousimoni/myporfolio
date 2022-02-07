@@ -268,6 +268,30 @@ h6 {
   left: -5px;
 }
 
+.about-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding-bottom: 50px;
+  padding-top: 50px;
+  gap: 100px;
+}
+
+#skills {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--previewShadow);
+}
+
+.social-links {
+  display: grid;
+  align-content: center;
+  text-alugn: center;
+}
+
+#social_img {
+  width: 100%;
+}
+
 @media screen and (max-width: 1200px) {
   .main-container {
     width: 95%;
@@ -277,7 +301,7 @@ h6 {
 @media screen and (max-width: 800px) {
   .intro-wrapper {
     grid-template-columns: 1fr;
-    grid-template-areas: 'nav-wrapper' 'left-column' 'right-column';
+    grid-template-areas: 'nav-wrapper''left-column''right-column';
   }
   .right-column {
     justify-content: center;
