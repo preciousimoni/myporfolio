@@ -14,6 +14,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body * {
@@ -38,9 +39,8 @@ span,
 label,
 input,
 textarea {
-  color: var(--mainText);
+  color: var(--secondaryText);
   font-family: 'Roboto Mono', monospace;
-  /* font-family: 'Russo One', sans-serif; */
 }
 
 a {
@@ -109,7 +109,7 @@ h6 {
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: 'nav-wrapper nav-wrapper''left-column right-column';
+  grid-template-areas: 'nav-wrapper nav-wrapper' 'left-column right-column';
 }
 
 .nav-wrapper {
@@ -172,6 +172,7 @@ h6 {
 }
 
 #profile_pic {
+  border-radius: 15px;
   display: block;
   margin: 0 auto;
   height: 200px;
@@ -198,7 +199,7 @@ h6 {
   cursor: pointer;
 }
 
-.theme-dot :hover {
+.theme-dot:hover {
   border-width: 5px;
 }
 
@@ -220,7 +221,7 @@ h6 {
 
 #settings-note {
   font-size: 12px;
-  font-size: italic;
+  font-style: italic;
   text-align: center;
 }
 
@@ -234,7 +235,7 @@ h6 {
 
 #preview-shadow {
   background-color: var(--previewShadow);
-  width: 300px;
+  max-width: 300px;
   height: 180px;
   padding-left: 30px;
   padding-top: 30px;
@@ -259,22 +260,22 @@ h6 {
 
 #corner-tl {
   top: -5px;
-  left: -5px;
+  left: -5px
 }
 
 #corner-tr {
   top: -5px;
-  right: -5px;
+  right: -5px
 }
 
 #corner-br {
   bottom: -5px;
-  right: -5px;
+  right: -5px
 }
 
 #corner-bl {
   bottom: -5px;
-  left: -5px;
+  left: -5px
 }
 
 .about-wrapper {
@@ -311,12 +312,13 @@ h6 {
 
 .post {
   border: 1px solid var(--borderColor);
-  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
 }
 
 .thumbnail {
+  display: block;
   width: 100%;
   height: 180px;
   object-fit: cover;
@@ -334,7 +336,7 @@ h6 {
 
 .post-intro {
   color: #4b5156;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 #contact-form {
@@ -386,9 +388,21 @@ h6 {
 @media screen and (max-width: 800px) {
   .intro-wrapper {
     grid-template-columns: 1fr;
-    grid-template-areas: 'nav-wrapper''left-column''right-column';
+    grid-template-areas: 'nav-wrapper' 'left-column' 'right-column';
   }
   .right-column {
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #preview-shadow {
+    max-width: 280px;
+    height: 180px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  #preview {
+    width: 280px;
   }
 }
