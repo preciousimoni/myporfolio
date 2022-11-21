@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -18,9 +19,9 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style/default.css" />
+    <link rel="stylesheet" href="{% static 'style/default.css' %}" />
 
-    <link id="theme-style" rel="stylesheet" href="" />
+    <link id="theme-style" rel="stylesheet" href="{% static '' %}" />
   </head>
 
   <body>
@@ -145,17 +146,16 @@
         <div class="post-wrapper">
           <div>
             <div class="post">
-              <img class="thumbnail" src="images/ssp.PNG" />
+              <img class="thumbnail" src="images/orayog.PNG" />
               <div class="post-preview">
-                <h6 class="post-title">Student Study Portal</h6>
+                <h6 class="post-title">O-Rayog Ecommerce</h6>
                 <p class="post-intro">
-                  An efficient and effective way students take notes, read
-                  books, take homeworks and so much more.
+                  An Ecommerce site for O-Rayog communications LTD, with cool user interface and payment gateway integration.
                 </p>
-                <p>Stack: HTML, CSS, Bootstrap, Django.</p>
+                <p>Stack: HTML, CSS, Bootstrap, Django, AWS(s3 bucket), Heroku.</p>
                 <a
                   target="_blank"
-                  href="https://adastudentstudyportal.herokuapp.com/"
+                  href="http://o-rayog.herokuapp.com/"
                   >View</a
                 >
               </div>
@@ -164,17 +164,16 @@
 
           <div>
             <div class="post">
-              <img class="thumbnail" src="images/eco.PNG" />
+              <img class="thumbnail" src="images/music.PNG" />
               <div class="post-preview">
-                <h6 class="post-title">Ecommerce Site</h6>
+                <h6 class="post-title">Musik</h6>
                 <p class="post-intro">
-                  An open source Ecommerce website and a major contributor to
-                  the codebase.
+                  Music player with search, lyrics features, popular music around, worldwide top charts, and much more.
                 </p>
-                <p>Stack: HTML, CSS, Bootstrap, Django.</p>
+                <p>Stack: HTML, CSS, Tailwind, React, Redux, RapidAPI, Netlify.</p>
                 <a
                   target="_blank"
-                  href="https://github.com/sajib1066/django-ecommerce"
+                  href="https://musik-pro.netlify.app/"
                   >View</a
                 >
               </div>
@@ -187,17 +186,17 @@
               <div class="post-preview">
                 <h6 class="post-title">Staff Directory</h6>
                 <p class="post-intro">
-                  A web application where staff of the institution upload their
-                  details and publications.
+                  A web application for Anchor University Lagos where staff of the institution upload their details and publications.
                 </p>
                 <p>Stack: HTML, CSS, Bootstrap, Laravel.</p>
+                <br>
                 <a target="_blank" href="https://staff.aul.edu.ng/">View</a>
               </div>
             </div>
           </div>
         </div>
 
-        <p align="center"><a href="post.html">View more projects</a></p>
+        <p align="center"><a href="{% url 'index2' %}">View more projects</a></p>
       </div>
     </section>
 
@@ -223,6 +222,6 @@
       </div>
     </section>
 
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
   </body>
 </html>
