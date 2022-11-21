@@ -1,208 +1,248 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Precious Imoniakemu</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Precious Imoniakemu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'style/default.css' %}" />
+  </head>
 
-  <link rel="stylesheet" href="style/default.css">
-</head>
+  <body>
+    <div class="nav-wrapper">
+      <p><a href="/">Home</a></p>
 
-<body>
-  <div class="nav-wrapper">
-    <div class="dots-wrapper">
-      <div id="dot-1" class="browser-dot"></div>
-      <div id="dot-2" class="browser-dot"></div>
-      <div id="dot-3" class="browser-dot"></div>
+      {% comment %} <div class="dots-wrapper">
+
+
+        <div id="dot-1" class="browser-dot"></div>
+        <div id="dot-2" class="browser-dot"></div>
+        <div id="dot-3" class="browser-dot"></div>
+      <p><a href="/">Home</a></p>
+      </div> {% endcomment %}
+
+      <ul id="navigation">
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
     </div>
-
-    <ul id="navigation">
-      <li>
-        <a href="#">Contact</a>
-      </li>
-    </ul>
-  </div>
-  <section class="s2">
-    <div class="main-container">
-      <h3 style="text-align: center;"> </h3>
-    </div>
-  </section>
-  <section class="s1">
-    <div class="main-container">
-      <h3 style="text-align: center;">Many more projects</h3>
-
-      <div class="post-wrapper">
-
-        <div>
-          <div class="post">
-            <img class="thumbnail" src="images/studybud.PNG">
-            <div class="post-preview">
-              <h6 class="post-title">StudyBud</h6>
-              <p class="post-intro">EduTech application for ADA Global Academy an arm of <a target="_blank" href="https://adaglobalconcept.com/">ADA Global Concept</a>.</p>
-              <p>Stack: HTML, CSS, Bootstrap, Django, Heroku.</p>
-              <a target="_blank" href="https://adastudy.herokuapp.com/">View</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="post">
-            <img class="thumbnail" src="images/med.PNG">
-            <div class="post-preview">
-              <h6 class="post-title">Medic_Call</h6>
-              <p class="post-intro">MedTech application; captures and stores the medical history, treatment required and more.</p>
-              <p>Stack: HTML, CSS, Bootstrap, Django.</p>
-              <a target="_blank" href="https://github.com/preciousimo/medic-call">View</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="post">
-            <img class="thumbnail" src="images/nysc.PNG">
-            <div class="post-preview">
-              <h6 class="post-title">NYSC Etche LGA Website</h6>
-              <p class="post-intro">NYSC website for corp members in Etche Local Government Area of Rivers State.</p>
-              <p>Stack: HTML, CSS, Bootstrap, Django, Heroku.</p>
-              <a target="_blank" href="https://nysc-etche.herokuapp.com/">View</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="post">
-            <img class="thumbnail" src="images/p01.jpg">
-            <div class="post-preview">
-              <h6 class="post-title">Online Food Ordering System</h6>
-              <p class="post-intro">An online food ordering system for <a target="_blank" href="https://aul.edu.ng/">Anchor University Lagos</a> with flutterwave integration.</p>
-              <p>Stack: HTML, CSS, Bootstrap, Django.</p>
-              <a target="_blank" href="https://github.com/preciousimo/afos">View</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="post">
-            <img class="thumbnail" src="images/pp.jpg">
-            <div class="post-preview">
-              <h6 class="post-title">Staff Directory</h6>
-              <p class="post-intro">A web application where staff of the institution upload their details and publications.</p>
-              <p>Stack: HTML, CSS, Bootstrap, Laravel.</p>
-              <a target="_blank" href="https://staff.aul.edu.ng/">View</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="post">
-            <img class="thumbnail" src="images/inbox.PNG">
-            <div class="post-preview">
-              <h6 class="post-title">Custom Inbox</h6>
-              <p class="post-intro">Custom inbox system that receives messages and responds to incoming email messages.</p>
-              <p>Stack: HTML, CSS, Bootstrap, Django.</p>
-              <a target="_blank" href="https://github.com/preciousimo/inbox">View</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="post">
-            <img class="thumbnail" src="images/orayog.PNG">
-            <div class="post-preview">
-              <h6 class="post-title">O-Rayog</h6>
-              <p class="post-intro">An Ecommerce site for O-Rayog communications, with cool user interface.</p>
-              <p>Stack: HTML, CSS, Bootstrap, Django, Heroku.</p>
-              <a target="_blank" href="o-rayog.herokuapp.com/">View</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="post">
-            <img class="thumbnail" src="images/p3.jpg">
-            <div class="post-preview">
-              <h6 class="post-title">Store Management System</h6>
-              <p class="post-intro">Designed, built, and mantained a store management system for Anchor University.</p>
-              <p>Stack: HTML, CSS, Bootstrap, Django.</p>
-              <a target="_blank" href="https://github.com/preciousimo/store_management_system">View</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="post">
-            <img class="thumbnail" src="images/TMA.PNG">
-            <div class="post-preview">
-              <h6 class="post-title">Team Member Allocation</h6>
-              <p class="post-intro">Designed, built, and mantained a store management system for Anchor University.</p>
-              <p>Stack: React</p>
-              <a target="_blank" href="post.html">View</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="post">
-            <img class="thumbnail" src="images/eco.PNG">
-            <div class="post-preview">
-              <h6 class="post-title">Ecommerce Site</h6>
-              <p class="post-intro">An open source Ecommerce website and a major contributor the codebase.</p>
-              <p>Stack: HTML, CSS, Bootstrap, Django.</p>
-              <a target="_blank" href="https://github.com/sajib1066/django-ecommerce">View</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="post">
-            <img class="thumbnail" src="images/ssp.PNG">
-            <div class="post-preview">
-              <h6 class="post-title">Student Study Portal</h6>
-              <p class="post-intro">An efficient and effective way students take notes, read books, take homeworks and so much more.</p>
-              <p>Stack: HTML, CSS, Bootstrap, Django.</p>
-              <a target="_blank" href="https://adastudentstudyportal.herokuapp.com/">View</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="post">
-            <img class="thumbnail" src="images/photo.PNG">
-            <div class="post-preview">
-              <h6 class="post-title">Photo Album</h6>
-              <p class="post-intro">A photo album website with Django & Images on AWS S3 Buckets. Store photos and view them.</p>
-              <p>Stack: HTML, CSS, Bootstrap, Django, AWS(S3).</p>
-              <a target="_blank" href="https://github.com/preciousimo/photo_album">View</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="post">
-            <img class="thumbnail" src="images/social.PNG">
-            <div class="post-preview">
-              <h6 class="post-title">Social Book</h6>
-              <p class="post-intro">Social Book is a social media website with similar features of instagram.</p>
-              <p>Stack: HTML, CSS, Bootstrap, Django.</p>
-              <a target="_blank" href="https://github.com/preciousimo/social_book">View</a>
-            </div>
-          </div>
-        </div>
-
+    <section class="s2">
+      <div class="main-container">
+        <h3 style="text-align: center;"></h3>
       </div>
+    </section>
+    <section class="s1">
+      <div class="main-container">
+        <h3 style="text-align: center;">Many more projects</h3>
 
-      <p align="center"><a target="_blank" href="https://github.com/preciousimo">Check GitHub Repository</a></p>
+        <div class="post-wrapper">
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/med.PNG" />
+              <div class="post-preview">
+                <h6 class="post-title">Medic_Call</h6>
+                <p class="post-intro">MedTech application; captures and stores the medical history, treatment required and more.</p>
+                <p>Stack: HTML, CSS, Bootstrap, Django.</p>
+                <br><br>
+                <a target="_blank" href="medic-call-production.up.railway.app/">View</a>
+              </div>
+            </div>
+          </div>
 
-    </div>
-  </section>
-</body>
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/eco.PNG" />
+              <div class="post-preview">
+                <h6 class="post-title">Ecommerce Site</h6>
+                <p class="post-intro">An open source Ecommerce website of which i am a major contributor the codebase.</p>
+                <p>Stack: HTML, CSS, Bootstrap, Django.</p>
+                <br><br>
+                <a target="_blank" href="https://github.com/sajib1066/django-ecommerce">View</a>
+              </div>
+            </div>
+          </div>
 
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/music.PNG" />
+              <div class="post-preview">
+                <h6 class="post-title">Musik</h6>
+                <p class="post-intro">
+                  Music player with search, lyrics features, popular music around, worldwide top charts, and much more.
+                </p>
+                <p>Stack: HTML, CSS, Tailwind, React, Redux, RapidAPI, Netlify.</p>
+                <a target="_blank" href="https://musik-pro.netlify.app/">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/p01.jpg" />
+              <div class="post-preview">
+                <h6 class="post-title">Online Food Ordering System</h6>
+                <p class="post-intro">
+                  An online food ordering system for <a target="_blank" href="https://aul.edu.ng/">Anchor University Lagos</a> with flutterwave integration.
+                </p>
+                <p>Stack: HTML, CSS, Bootstrap, Django, PostgreSQL.</p>
+                <a target="_blank" href="https://github.com/preciousimo/afos">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/studybud.PNG" />
+              <div class="post-preview">
+                <h6 class="post-title">StudyBud</h6>
+                <p class="post-intro">
+                  EduTech application for ADA Global Academy an arm of <a target="_blank" href="https://adaglobalconcept.com/">ADA Global Concept</a>.
+                </p>
+                <p>Stack: HTML, CSS, Bootstrap, Django, Heroku.</p>
+                <a target="_blank" href="https://adastudy.herokuapp.com/">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/photo.PNG" />
+              <div class="post-preview">
+                <h6 class="post-title">Photo Album</h6>
+                <p class="post-intro">A photo album website with Django & Images on AWS S3 Buckets. Store photos and view them.</p>
+                <p>Stack: HTML, CSS, Bootstrap, Django, AWS(s3 bucket).</p>
+                <a target="_blank" href="https://github.com/preciousimo/photo_album">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/nysc.PNG" />
+              <div class="post-preview">
+                <h6 class="post-title">NYSC Etche LGA Website</h6>
+                <p class="post-intro">NYSC website for corp members in Etche Local Government Area of Rivers State.</p>
+                <p>Stack: HTML, CSS, Bootstrap, Django, Heroku.</p>
+                <a target="_blank" href="https://nysc-etche.herokuapp.com/">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/p3.jpg" />
+              <div class="post-preview">
+                <h6 class="post-title">Store Management System</h6>
+                <p class="post-intro">Designed, built, and mantained a store management system for Anchor University.</p>
+                <p>Stack: HTML, CSS, Bootstrap, Django, PostgreSQL.</p>
+                <a target="_blank" href="https://github.com/preciousimo/store_management_system">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/TMA.PNG" />
+              <div class="post-preview">
+                <h6 class="post-title">Team Member Allocation</h6>
+                <p class="post-intro">A light weight team allocation app that allows project managers organise several teams.</p>
+                <p>Stack: HTML, CSS, Bootstrap, React</p>
+                <a target="_blank" href="https://team-member-allocation.vercel.app/">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/inbox.PNG" />
+              <div class="post-preview">
+                <h6 class="post-title">Custom Inbox</h6>
+                <p class="post-intro">Custom inbox system that receives messages and responds to incoming email messages.</p>
+                <p>Stack: HTML, CSS, Bootstrap, Django.</p>
+                <a target="_blank" href="https://github.com/preciousimo/inbox">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/ssp.PNG" />
+              <div class="post-preview">
+                <h6 class="post-title">Student Study Portal</h6>
+                <p class="post-intro">An efficient and effective way students take notes, read books, take homeworks and so much more.</p>
+                <p>Stack: HTML, CSS, Bootstrap, Django.</p>
+                <a target="_blank" href="https://adastudentstudyportal.herokuapp.com/">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/social.PNG" />
+              <div class="post-preview">
+                <h6 class="post-title">Social Book</h6>
+                <p class="post-intro">Social Book is a social media website with similar features of instagram.</p>
+                <p>Stack: HTML, CSS, Bootstrap, Django.</p>
+                <a target="_blank" href="https://github.com/preciousimo/social_book">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/orayog.PNG" />
+              <div class="post-preview">
+                <h6 class="post-title">O-Rayog</h6>
+                <p class="post-intro">An Ecommerce site for O-Rayog communications, with cool user interface.</p>
+                <p>Stack: HTML, CSS, Bootstrap, Django, AWS(s3 bucket), Heroku.</p>
+                <a target="_blank" href="o-rayog.herokuapp.com/">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/pp.jpg" />
+              <div class="post-preview">
+                <h6 class="post-title">Staff Directory</h6>
+                <p class="post-intro">A web application where staff of the institution upload their details and publications.</p>
+                <p>Stack: HTML, CSS, Bootstrap, Laravel.</p>
+                <br>
+                <a target="_blank" href="https://staff.aul.edu.ng/">View</a>
+              </div>
+            </div>
+          </div>
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+        </div>
+
+        <p align="center">
+          <a target="_blank" href="https://github.com/preciousimo">Check GitHub Repository</a>
+        </p>
+      </div>
+    </section>
+  </body>
 </html>
