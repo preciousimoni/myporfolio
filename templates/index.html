@@ -204,7 +204,8 @@
       <div class="main-container">
         <h3 id="anchor-name" style="text-align: center">Get In Touch</h3>
 
-        <form id="contact-form">
+        <form action="{% url 'index' %}" method="post" id="contact-form">
+          {% csrf_token %}
           <label>Name</label>
           <input class="input-field" type="text" name="name" />
 
